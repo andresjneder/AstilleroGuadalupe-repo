@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Encierra el centro de navegación principal de un archivo. En criollo: menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="pregfrecs.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html" class="activo">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Galería</h1>
+    <!-- Encierra el contenido principal de un archivo html -->
+     <p>En esta sección podrás ver una selección de imágenes de nuestras embarcaciones y trailers. Cada imagen representa la calidad y el detalle que ponemos en cada uno de nuestros productos.</p>
+    <main class="galeria">
+    <div class="galeria-grid">
+        <a href="#img1" class="galeria-item tall"><img src="/assets/photo/450.png" alt="Imagen 1" /></a>
+        <a href="#img2" class="galeria-item"><img src="/assets/photo/tracker 520.jpg" alt="Imagen 2" /></a>
+        <a href="#img3" class="galeria-item"><img src="/assets/photo/tracker 470 3.jpg" alt="Imagen 3" /></a>
+        <a href="#img4" class="galeria-item short"><img src="/assets/photo/Imagen de WhatsApp 2025-05-22 a las 13.19.31_d9f3651c.jpg" alt="Imagen 4" /></a>
+    </div>
+</main>
+
+<!-- Modales CSS para cada imagen -->
+<div id="img1" class="modal-img">
+    <a href="#" class="close">&times;</a>
+    <img src="/assets/photo/450.png" alt="Imagen 1 grande">
+</div>
+<div id="img2" class="modal-img">
+    <a href="#" class="close">&times;</a>
+    <img src="/assets/photo/tracker 520.jpg" alt="Imagen 2 grande">
+</div>
+<div id="img3" class="modal-img">
+    <a href="#" class="close">&times;</a>
+    <img src="/assets/photo/tracker 470 3.jpg" alt="Imagen 3 grande">
+</div>
+<div id="img4" class="modal-img">
+    <a href="#" class="close">&times;</a>
+    <img src="/assets/photo/Imagen de WhatsApp 2025-05-22 a las 13.19.31_d9f3651c.jpg" alt="Imagen 4 grande">
+</div>
+    <!-- Footer: Sirve para incluir información complementaria como enlaces de navegación, enlaces de interés, derechos de autor y enlaces a redes sociales -->
+    <footer>
+        <div class="logo-redes">
+            <span class="logo-neder">Redes del Astillero Guadalupe</span>
+            <a href="https://www.facebook.com/AstilleroGuadalupe" target="_blank" rel="noopener">
+                <img src="../assets/photo/face.png" alt="Facebook" class="icono-red">
+            </a>
+            <a href="https://www.instagram.com/AstilleroGuadalupe" target="_blank" rel="noopener">
+                <img src="../assets/photo/insta.jfif" alt="Instagram" class="icono-red">
+            </a>
+            <a href="https://www.youtube.com/AstilleroGuadalupe" target="_blank" rel="noopener">
+                <img src="../assets/photo/youtube.png" alt="YouTube" class="icono-red">
+            </a>
+        </div>
+        <div>
+            <form action="#"> <!-- Formulario para el newsletter -->
+                <label for="newsletter">Suscribite a nuestro newsletter</label>
+                <input type="email" name="newsletter" id="newsletter" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
