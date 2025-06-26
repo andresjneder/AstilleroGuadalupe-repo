@@ -3,103 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-    <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Productos</title>
     <link rel="stylesheet" href="../styles/styles.css">
-
 </head>
-
 <body>
-     <!--Encierra el contenido del encabezado del sitio.Titulo,navegacion,redes,carrito, imput de busqueda,etc. El contenido se repite en todos los archivos -->
     <header>
-        <form action="#" method="get" class="busqueda-header" style="display:inline-block; margin-left: 30px;">
-        <input type="text" name="q" placeholder="Buscar..." aria-label="Buscar">
-        <button type="submit">🔍</button>
-    </form>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="producto.html">Productos</a></li>
-                <li><a href="pregfrecs.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="galeria.html">Galería</a></li>
+            <nav class="navbar navbar-expand-lg">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#">Astillero Guadalupe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                    <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+                    </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/pages/producto.html">Embarcaciones y Accesorios</a></li>
+              </ul>
+              <li class="nav-item">
+              <a class="nav-link" href="/pages/pregfrecs.html">Preguntas Frecuentes</a>
+              </li>
+             <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+               <li class="nav-item">
+              <a class="nav-link" href="/pages/galeria.html">Galeria</a>
+              </li>
             </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
         </nav>
     </header>
-     <main>
-        <!--Separa en temas el contenido especifico de un archivo-->
+    <main>
+        <!-- Sección Embarcaciones -->
         <section>
-            <h2>Embarcaciones</h2> <!--Encerramos el contenido de embarcaciones-->
-            <div>
-                <img src="/assets/photo/mini tracker.jpg" alt="">
-                <h3>Mini Tracker</h3>
-                <p>$3000</p>
-                <button>Agregar al carrito</button>
-
+            <h2>Embarcaciones</h2>
+            <div class="productos-grid">
+                <!-- Lancha 1 -->
+                <div class="card">
+                    <a href="#modal-tracker470">
+                        <img src="/assets/photo/tracker 470.jpg" class="card-img-top" alt="Lancha Tracker 470">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Lancha Tracker 470</h5>
+                        <p class="card-text">Lancha de fibra de vidrio ideal para pesca y paseo.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Lancha 2 -->
+                <div class="card">
+                    <a href="#modal-tracker520">
+                        <img src="/assets/photo/tracker 520.jpg" class="card-img-top" alt="Lancha Tracker 520">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Lancha Tracker 520</h5>
+                        <p class="card-text">Lancha amplia y resistente para grupos y excursiones.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Lancha 3 -->
+                <div class="card">
+                    <a href="#modal-mini-tracker">
+                        <img src="/assets/photo/mini tracker.jpg" class="card-img-top" alt="Mini Tracker">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Mini Tracker</h5>
+                        <p class="card-text">Embarcación compacta, ideal para lagunas y ríos chicos.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Lancha 4 -->
+                <div class="card">
+                    <a href="#modal-tracker470-3">
+                        <img src="/assets/photo/tracker 470 3.jpg" class="card-img-top" alt="Lancha Tracker 470 Edición 3">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Tracker 470</h5>
+                        <p class="card-text">Versión mejorada con más capacidad y confort.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Trailer -->
+                <div class="card">
+                    <a href="#modal-trailer">
+                        <img src="/assets/photo/trailer.jpg" class="card-img-top" alt="Trailer para lancha">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Trailer para lancha</h5>
+                        <p class="card-text">Trailer reforzado para embarcaciones medianas y grandes.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Ancla -->
+                <div class="card">
+                    <a href="#modal-ancla">
+                        <img src="/assets/photo/ancla.jpeg" class="card-img-top" alt="Ancla">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ancla</h5>
+                        <p class="card-text">Ancla resistente para todo tipo de embarcaciones.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-             <div>
-                <img src="/assets/photo/tracker 470 (2).jpg" alt="">
-                <h3>Tracker 470</h3>
-                <p>$5000</p>
-                <button>Agregar al carrito</button>
-
+        </section>
+        <!-- Sección Accesorios -->
+        <section>
+            <h2>Accesorios</h2>
+            <div class="productos-grid">
+                <!-- Chaleco Salvavidas -->
+                <div class="card">
+                    <a href="#modal-salvavidas">
+                        <img src="/assets/photo/salvavidas.webp" class="card-img-top" alt="Chaleco Salvavidas">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Chaleco Salvavidas</h5>
+                        <p class="card-text">Chaleco homologado para máxima seguridad en el agua.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Bengala -->
+                <div class="card">
+                    <a href="#modal-bengala">
+                        <img src="/assets/photo/bengala.jfif" class="card-img-top" alt="Bengala de Auxilio">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Bengala de Auxilio</h5>
+                        <p class="card-text">Bengala de emergencia para señalización náutica.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Botiquín -->
+                <div class="card">
+                    <a href="#modal-botiquin">
+                        <img src="/assets/photo/descarga.jfif" class="card-img-top" alt="Botiquín de Primeros Auxilios">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Botiquín de Primeros Auxilios</h5>
+                        <p class="card-text">Kit completo para emergencias a bordo.</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-             <div>
-                <img src="/assets/photo/tracker 520.jpg" alt="">
-                <h3>Tracker 520</h3>
-                <p>$8000</p>
-                <button>Agregar al carrito</button>
-
-            </div>
-
-            <h3>Trailers</h3> <!--Encerramos el contenido de trailers-->
-            <div>
-                <img src="/assets/photo/trailer.jpg" alt="">
-                <h3>Nombre Producto</h3>
-                <p>$5000</p>
-                <button>Agregar al carrito</button>
-
-            </div>
-            <div>
-                <h3>Accesorios</h3> <!--Acá utilizamos una lista ordenada para detallar la lista de productos que se comercializan en seccion de accesorios-->
-                <ol>
-                <li>Chaleco Salvavidas</li>
-                <img src="/assets/photo/salvavidas.webp"alt="Chaleco Salvavidas">
-                <button>Agregar al carrito</button>
-                <li>Bengala de Axilio</li>
-                <img src="/assets/photo/bengala.jfif" alt="Bengala de Axilio">
-                <button>Agregar al carrito</button>
-                <li>Botiquin de Primeros Auxilios</li>
-                <img src="/assets/photo/descarga.jfif" alt="Botiquin de Primeros Auxilios">
-                <button>Agregar al carrito</button>
-                <li>Ancla</li>
-                <img src="/assets/photo/ancla.jpeg" alt="Ancla">
-                <button>Agregar al carrito</button>
-                </ol>
-            </div>
-
-
         </section>
     </main>
-    <!--Footer-->
-    <footer> <!--Sirve para incluir información complementaria como enlaces de navegación, enlaces de interés, derechos de autor y enlaces a redes sociales-->
-       <div class="logo-redes">
-        <span class="logo-neder">Redes del Astillero Guadalupe</span>
-        <a href="https://www.facebook.com/Astillero Guadalupe"><img src="/assets/photo/face.png" alt="Facebook" class="icono-red"></a>
-        <a href="https://www.instagram.com/Astillero Guadalupe"><img src="/assets/photo/insta.jfif" alt="Instagram" class="icono-red"></a>
-        <a href="https://www.youtube.com/Astillero Guadalupe"><img src="/assets/photo/youtube.png" alt="YouTube" class="icono-red"></a>
-    </div>
-    </div>
-    <div>
-        <form action=""> <!--Formulario para el newsletter-->
-            <label for="newsletter">Subscribite a nuestro newsletter</label>
-            <input type="email" name="newsletter" id="newsletter">
-            <button>Enviar</button>
-    </div>
+    <footer>
+        <div class="logo-redes">
+            <span class="logo-neder">Redes del Astillero Guadalupe</span>
+            <a href="https://www.facebook.com/Astillero Guadalupe"><img src="/assets/photo/face.png" alt="Facebook" class="icono-red"></a>
+            <a href="https://www.instagram.com/Astillero Guadalupe"><img src="/assets/photo/insta.jfif" alt="Instagram" class="icono-red"></a>
+            <a href="https://www.youtube.com/Astillero Guadalupe"><img src="/assets/photo/youtube.png" alt="YouTube" class="icono-red"></a>
+        </div>
+        <div>
+            <form action="">
+                <label for="newsletter">Subscribite a nuestro newsletter</label>
+                <input type="email" name="newsletter" id="newsletter">
+                <button>Enviar</button>
+            </form>
+        </div>
     </footer>
+    <!-- Modals para imágenes fullscreen -->
+    <div id="modal-tracker470" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/tracker 470.jpg" alt="Lancha Tracker 470">
+    </div>
+    <div id="modal-tracker520" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/tracker 520.jpg" alt="Lancha Tracker 520">
+    </div>
+    <div id="modal-mini-tracker" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/mini tracker.jpg" alt="Mini Tracker">
+    </div>
+    <div id="modal-tracker470-3" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/tracker 470 3.jpg" alt="Tracker 470 Edición 3">
+    </div>
+    <div id="modal-trailer" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/trailer.jpg" alt="Trailer para lancha">
+    </div>
+    <div id="modal-ancla" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/ancla.jpeg" alt="Ancla">
+    </div>
+    <div id="modal-salvavidas" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/salvavidas.webp" alt="Chaleco Salvavidas">
+    </div>
+    <div id="modal-bengala" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/bengala.jfif" alt="Bengala de Auxilio">
+    </div>
+    <div id="modal-botiquin" class="modal-img">
+        <a href="#" class="close">&times;</a>
+        <img src="/assets/photo/descarga.jfif" alt="Botiquín de Primeros Auxilios">
+    </div>
+<body>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Función para abrir el modal
+    document.querySelectorAll('.card a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const modalId = this.getAttribute('href');
+            document.querySelector(modalId).style.display = 'block';
+        });
+    });
 
-</body>
-
-
-
-</html>
+    // Función para cerrar el modal
+    document.querySelectorAll('.modal-img .close').forEach(closeBtn => {
+        closeBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            this.parentElement.style.display = 'none';
+        });
+    });
